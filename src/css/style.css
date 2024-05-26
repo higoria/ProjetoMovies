@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  width: 100vw;
+  display: block;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../imgs/chernobilBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: optimizeQuality;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.div-nav-geral {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 160px;
+  align-items: center;
+  width: 100%;
+}
+.div-hbo img {
+  display: block;
+  height: 120px;
+  cursor: pointer;
+}
+.itens-direita {
+  display: flex;
+  gap: 40px;
+}
+
+.itens-direita img {
+  display: block;
+  height: 40px;
+  cursor: pointer;
+}
+
+.section01-conteiner {
+  padding-top: 200px;
+  display: flex;
+  width: 960px;
+  justify-content: center;
+}
+
+.textos-principais {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textos-principais h1 {
+  font-size: 6em;
+  font-weight: 900;
+}
+.textos-principais p {
+  max-width: 60ch;
+}
+.texto-secundario {
+  padding-top: 170px;
+  display: flex;
+  max-width: 720px;
+  justify-content: center;
+}
+.texto-secundario h2 {
+  font-size: 2rem;
+}
+
+.texto-secundario span {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.section03-conteiner {
+  position: absolute;
+  top: 120px;
+  right: 150px;
+}
+.epsodios-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.section03-conteiner .tempo {
+  text-align: end;
+}
+
+.section03-conteiner .ep {
+  text-align: right;
+}
+.imgs-ep-geral img {
+  width: 200px;
+  border-radius: 10px;
+}
+.ep-geral {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.ep-geral .numeros-geral {
+  grid-row: 1 / 3;
+}
+
+.div-hbo img:hover,
+.itens-direita img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
