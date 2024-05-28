@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  min-height: max-content;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
   background-image: url("../imgs/chernobilBG.jpg");
   background-repeat: no-repeat;
