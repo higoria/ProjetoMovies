@@ -2,19 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
 }
-
 body {
-  width: 100vw;
-  display: block;
-  min-height: 100vh;
+  min-height: max-content;
   font-family: "Poppins", sans-serif;
   background-image: url("../imgs/chernobilBG.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   image-rendering: optimizeQuality;
+  image-rendering: pixelated;
+  width: 100vw;
 }
 
 li {
@@ -24,12 +22,13 @@ li {
 a {
   text-decoration: none;
 }
+
 .div-nav-geral {
   display: flex;
   justify-content: space-between;
-  padding-inline: 160px;
+  max-width: 1650px;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
 }
 .div-hbo img {
   display: block;
@@ -49,9 +48,8 @@ a {
 
 .section01-conteiner {
   padding-top: 200px;
-  display: flex;
-  width: 960px;
-  justify-content: center;
+  max-width: 1650px;
+  margin: 0 auto;
 }
 
 .textos-principais {
@@ -68,9 +66,8 @@ a {
 }
 .texto-secundario {
   padding-top: 170px;
-  display: flex;
-  max-width: 720px;
-  justify-content: center;
+  max-width: 1650px;
+  margin: 0 auto;
 }
 .texto-secundario h2 {
   font-size: 2rem;
@@ -82,13 +79,12 @@ a {
 }
 .section03-conteiner {
   position: absolute;
-  top: 120px;
-  right: 150px;
+  right: 130px;
+  top: 132px;
 }
 .epsodios-conteiner {
   display: flex;
   flex-direction: column;
-  gap: 0px;
 }
 
 .section03-conteiner .tempo {
@@ -115,4 +111,208 @@ a {
 .itens-direita img:hover {
   transition: 0.5s;
   transform: scale(1.2);
+}
+
+@media (max-width: 1800px) {
+  body {
+    height: 100vh;
+  }
+  .section03-conteiner {
+    top: 92px;
+  }
+
+  .div-nav-geral {
+    max-width: 1550px;
+  }
+  .div-hbo img {
+    height: 110px;
+  }
+  .itens-direita {
+    display: flex;
+    gap: 40px;
+  }
+
+  .section01-conteiner {
+    padding-top: 170px;
+    max-width: 1550px;
+  }
+
+  .textos-principais h1 {
+    font-size: 5.4em;
+    font-weight: 900;
+  }
+  .textos-principais p {
+    max-width: 60ch;
+    margin-top: -20px;
+  }
+  .texto-secundario {
+    padding-top: 170px;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+  .texto-secundario h2 {
+    font-size: 2rem;
+  }
+
+  .texto-secundario span {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 1800px) {
+  .div-nav-geral {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    max-width: 1350px;
+  }
+}
+@media (max-width: 1387px) {
+  .div-nav-geral {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    max-width: 1250px;
+  }
+  .textos-principais h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+  }
+  .section03-conteiner {
+    top: 120px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .div-nav-geral {
+    max-width: 950px;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    max-width: 950px;
+  }
+  .textos-principais h1 {
+    font-size: 3.3rem;
+  }
+  .textos-principais p {
+    font-size: 1rem;
+    padding-top: 20px;
+    max-width: 50ch;
+    font-weight: 500;
+  }
+  .texto-secundario h2 {
+    font-size: 1.2rem;
+  }
+  .imgs-ep-geral img {
+    width: 160px;
+  }
+  .numeros-geral h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .div-nav-geral {
+    max-width: 720px;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    max-width: 720px;
+  }
+  .textos-principais h1 {
+    font-size: 2.8rem;
+  }
+  .textos-principais p {
+    font-size: 0.9rem;
+    padding-top: 20px;
+    max-width: 50ch;
+    font-weight: 500;
+  }
+  .texto-secundario h2 {
+    font-size: 1.2rem;
+  }
+  .imgs-ep-geral img {
+    width: 160px;
+  }
+  .numeros-geral h1 {
+    font-size: 1.2rem;
+  }
+  .section03-conteiner {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .section03-conteiner {
+    display: none;
+  }
+  .div-nav-geral {
+    max-width: 720px;
+    padding-inline: 20px;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    max-width: 520px;
+  }
+  .textos-principais h1 {
+    font-size: 3.2rem;
+  }
+  .textos-principais p {
+    font-size: 0.9rem;
+    padding-top: 20px;
+    max-width: 50ch;
+    font-weight: 500;
+  }
+  .texto-secundario h2 {
+    font-size: 1.2rem;
+  }
+  .imgs-ep-geral img {
+    width: 160px;
+  }
+  .numeros-geral h1 {
+    font-size: 1.2rem;
+  }
+  .section03-conteiner {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section03-conteiner {
+    display: none;
+  }
+  .div-nav-geral {
+    max-width: 720px;
+    padding-inline: 20px;
+  }
+  .section01-conteiner,
+  .texto-secundario {
+    padding-inline: 20px;
+    max-width: 520px;
+  }
+  .textos-principais h1 {
+    font-size: 3.2rem;
+  }
+  .textos-principais p {
+    font-size: 0.9rem;
+    padding-top: 20px;
+    max-width: 50ch;
+    font-weight: 500;
+  }
+  .texto-secundario h2 {
+    font-size: 1.2rem;
+  }
+  .imgs-ep-geral img {
+    width: 160px;
+  }
+  .numeros-geral h1 {
+    font-size: 1.2rem;
+  }
+  .section03-conteiner {
+    display: none;
+  }
 }
