@@ -161,6 +161,9 @@ a {
 }
 
 @media (max-width: 1800px) {
+  body {
+    height: 100vh;
+  }
   .div-nav-geral {
     max-width: 1350px;
     margin: 0 auto;
@@ -169,14 +172,19 @@ a {
   .texto-secundario {
     max-width: 1350px;
   }
+  .imgs-ep-geral img {
+    height: 110px;
+  }
 }
 @media (max-width: 1387px) {
   .div-nav-geral {
+    padding-inline: 20px;
     max-width: 1250px;
     margin: 0 auto;
   }
   .section01-conteiner,
   .texto-secundario {
+    padding-inline: 20px;
     max-width: 1250px;
   }
   .textos-principais h1 {
@@ -184,7 +192,10 @@ a {
     font-weight: 900;
   }
   .section03-conteiner {
-    top: 120px;
+    top: 105px;
+  }
+  .imgs-ep-geral img {
+    height: 110px;
   }
 }
 
